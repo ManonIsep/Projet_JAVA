@@ -1,7 +1,5 @@
 package org.example;
 
-import java.util.List;
-
 public class Avion {
     private String immatriculation;
     private String modele;
@@ -13,8 +11,20 @@ public class Avion {
         this.capacite = capacite;
     }
 
-    public boolean verifierDisponibilite(String dateHeure) {
-        // Logic to verify availability of the plane at a given time
-        return true;
+    public String getImmatriculation() {
+        return immatriculation;
+    }
+
+    public String getModele() {
+        return modele;
+    }
+
+    public int getCapacite() {
+        return capacite;
+    }
+
+    @Override
+    public String toString() {
+        return "Avion [immatriculation=" + immatriculation + ", modele=" + modele + ", capacite=" + capacite + "]";
     }
 }

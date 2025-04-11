@@ -14,4 +14,9 @@ public class Employé extends Personne {
     public String obtenirRole() {
         return "Employé";
     }
+
+    @Override
+    public String toString() {
+        return "Employé [numeroEmploye=" + numeroEmploye + ", dateEmbauche=" + dateEmbauche + ", nom=" + super.getNom() + "]";
+    }
 }
